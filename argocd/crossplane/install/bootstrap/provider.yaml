@@ -8,14 +8,14 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "2"
 spec:
-  project: default
+  project: alfred
   source:
     repoURL: https://github.com/romuloslv/gitops
     targetRevision: HEAD
     path: argocd/crossplane/install/provider-aws/providers
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: poc
   syncPolicy:
     automated:
       prune: true

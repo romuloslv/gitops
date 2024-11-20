@@ -8,7 +8,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "1"
 spec:
-  project: default
+  project: alfred
   source:
     repoURL: https://github.com/romuloslv/gitops
     targetRevision: HEAD

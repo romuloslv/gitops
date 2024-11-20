@@ -6,14 +6,14 @@ metadata:
   finalizers:
     - resources-finalizer.poc.local.com/argocd
 spec:
-  project: default
+  project: alfred
   source:
     repoURL: https://github.com/romuloslv/gitops
     targetRevision: HEAD
     path: argocd/infra/s3
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: poc
   syncPolicy:
     automated:
       prune: true    
