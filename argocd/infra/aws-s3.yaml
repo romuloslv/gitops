@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/romuloslv/gitops
     targetRevision: HEAD
-    path: infra/s3
+    path: argocd/infra/s3
   destination:
     server: https://kubernetes.default.svc
     namespace: default
