@@ -10,7 +10,3 @@ data:
       kinds:
       - ProviderConfigUsage
   accounts.provider-argocd: apiKey
-  # repositories: |
-  #   - url: https://charts.crossplane.io/stable
-  #     name: crossplane-stable
-  #     insecure: true
